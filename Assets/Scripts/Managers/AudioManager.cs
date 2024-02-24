@@ -2,8 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum BGM { One = 0, Two = 1, Three = 2}
-public enum SE {  }
+public enum BGM { One = 0, Two = 1, Three = 2 }
+public enum SE { }
 
 public class AudioManager : SingletonMonoBehaviour<AudioManager>
 {
@@ -39,7 +39,7 @@ public class AudioManager : SingletonMonoBehaviour<AudioManager>
 
     public void RandomSe(SE se)
     {
-        seAudioSource.clip = seAudioClips[(int)se - 1];
-        seAudioSource.Play();
+        randomSeAudioSource.clip = seAudioClips[(int)se - 1];
+        randomSeAudioSource.Play();
     }
 }
